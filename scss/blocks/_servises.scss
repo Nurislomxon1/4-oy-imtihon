@@ -1,0 +1,139 @@
+.servises {
+  margin-top: 107px;
+}
+
+.servises__inner {
+  padding: 55px 20px 33px;
+}
+
+.servises__title {
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 187.5%;
+  color: #222222;
+}
+
+.servises__list {
+  max-width: 300px;
+  position: relative;
+  padding-bottom: 140px;
+}
+
+.servises__item {
+  width: 300px;
+  padding: 30px 30px 24px 28px;
+}
+
+.servises__btn {
+  padding: 5px 19px 5px 10px;
+  font-size: 14px;
+  line-height: 187.5%;
+  color: #0CBE64;
+  background-color: #0cbe6426;
+}
+
+.btn-second {
+  color: #DC0000;
+  background: rgba(220, 0, 0, 0.1);
+}
+
+.btn-third {
+  color: #B000DC;
+  background: rgba(176, 0, 220, 0.11);
+}
+
+.btn-four {
+  color: #0058DC;
+  background: rgba(0, 88, 220, 0.09);
+}
+
+.servises__info-title {
+  font-size: 20px;
+  line-height: 187.5%;
+}
+
+.servises__info-text {
+  font-size: 12px;
+  line-height: 187.5%
+}
+
+.align-self-end {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 187.5%;
+  color: #DC7000;
+
+  &::after {
+    margin-left: 10px;
+    @include psevdoelements(inline-block, 11px, 13px, "");
+    background-image: url('../../images/arrow-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@include mobile-first(680px) {
+  .servises__list {
+    max-width: 680px;
+  }
+
+  .servises__item {
+    max-width: 300px;
+    &:not(:last-child) {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
+}
+
+@include mobile-first(768px) {
+  .servises__inner {
+    padding: 69px 70px 65px;
+  }
+
+  .servises__list {
+    padding-bottom: 100px;
+  }
+
+  .servises__title {
+    font-size: 30px;
+  }
+}
+
+@include mobile-first(992px) {
+  .servises {
+    margin-top: 133px !important;
+  }
+
+  .servises__list {
+    max-width: 1440px;
+  }
+
+  .servises__item {
+    max-width: 378px !important;
+    padding: 35px 39px 39px 35px;
+  }
+
+  .servises__title {
+    margin-bottom: 32px;
+    font-size: 30px;
+  }
+
+  .servises__btn {
+    margin-bottom: 19px !important;
+    padding: 7px 35px 6px 14px;
+  }
+
+  .servises__info-text {
+    margin-bottom: 28px !important;
+    font-size: 14px;
+  }
+}
+
+@include mobile-first(1440px) {
+  .servises__item:not(:last-child) {
+    margin-right: 40px;
+    margin-left: 20px;
+  }
+}

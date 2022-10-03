@@ -1,0 +1,96 @@
+.feature {
+  margin-top: 100px;
+}
+
+.feature__title {
+  font-size: 20px;
+  line-height: 187.5%;
+  color: #222222;
+}
+
+.feature__text {
+  font-size: 12px;
+  line-height: 187.5%;
+}
+
+.feature__list {
+  margin-top: 106px;
+  max-width: 1045px;
+}
+
+.feature__item {
+  &:not(:last-child) {
+    margin-bottom: 65px;
+  }
+
+  &:first-child::before {
+    background-image: url('../../images/smartphone.svg');
+  }
+
+  &:nth-child(2)::before {
+    background-image: url('../../images/computer.svg');
+  }
+
+  &:nth-child(3)::before {
+    background-image: url('../../images/play-station.svg');
+  }
+
+  &:nth-child(4)::before {
+    background-image: url('../../images/vr-galss.svg');
+  }
+
+  &:nth-child(5)::before {
+    background-image: url('../../images/desktop.svg');
+  }
+
+  &:last-child::before {
+    background-image: url('../../images/3d-cube.svg');
+  }
+
+  &::before {
+    margin-bottom: 30px;
+    @include psevdoelements(inline-block, 65px, 65px, "");
+    border-radius: 50%;
+    background-color: rgba(220, 112, 0, 0.09);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.feature__item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 187.5%;
+  color: #000000;
+}
+
+.feature__item-link {
+  width: 21px;
+  height: 21px;
+  background-image: url('../../images/arrow-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@include mobile-first(992px) {
+  .feature {
+    margin-top: 165px;
+  }
+
+  .feature__title-wrapper {
+    padding: 0 20px;
+  }
+
+  .feature__list {
+    margin-top: 100px;
+  }
+
+  .feature__title {
+    font-size: 25px;
+    line-height: 187.5%;
+  }
+
+  .feature__text {
+    font-size: 16px;
+  }
+}

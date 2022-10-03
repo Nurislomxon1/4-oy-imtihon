@@ -1,0 +1,97 @@
+.logo-img {
+  width: 57px;
+  height: 31px;
+}
+
+.site-header__address-link {
+  font-size: 10px;
+  line-height: 15px;
+  color: #1a1a1a;
+
+  &:first-child {
+    margin-right: 100px;
+
+    &::before {
+      background-image: url('../../images/location.svg');
+    }
+  }
+
+  &::before {
+    margin-right: 10px;
+    @include psevdoelements(inline-block, 15px, 15px, "");
+  }
+
+  &:last-child {
+    &::before {
+      background-image: url('../../images/phone.svg');
+    }
+  }
+}
+
+.navbar-btn {
+  width: 26px;
+  height: 21px;
+  background-image: url('../../images/burger.svg');
+}
+
+.site-header__boottom {
+  background: linear-gradient(90.05deg, #e47500 -5.66%, #df7c14 115.63%) !important;
+}
+
+.sitenav {
+  padding-top: 20px;
+  padding-bottom: 19px;
+}
+
+.btn-contact {
+  padding: 10px 28px 11px 27px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #dc7000;
+}
+
+.nav-item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.nav-link.active {
+  &::before {
+    display: none !important;
+    margin-right: 8px;
+    @include psevdoelements(inline-block, 12px, 12px, "");
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
+
+@include mobile-first(768px) {
+  .logo-img {
+    width: 70px;
+    height: 39px;
+  }
+
+  .sitenav {
+    padding-top: 15px;
+    padding-bottom: 14px;
+  }
+
+  .nav-link.active {
+    &::before {
+      display: inline-block !important;
+    }
+  }
+}
+
+@include mobile-first(900px) {
+  .nav-item {
+    &:not(:last-child) {
+      margin-right: 65px;
+    }
+
+    &:first-child {
+      margin-right: 85px;
+    }
+  }
+}
