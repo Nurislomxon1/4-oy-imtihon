@@ -31,9 +31,19 @@
 .navbar-btn {
   width: 26px;
   height: 21px;
-  background-image: url('../../images/burger.svg');
+  background-image: url("../images/burger.svg");
 }
 
+.header__open .nav__start .nav__open{
+  display: block;
+}
+.header__open .header__burger{
+  background-image: url("../images/x.svg");
+  background-repeat: no-repeat;
+}
+.header__open {
+  text-align: center;
+}
 .site-header__boottom {
   background: linear-gradient(90.05deg, #e47500 -5.66%, #df7c14 115.63%) !important;
 }
@@ -48,6 +58,11 @@
   font-size: 13px;
   line-height: 20px;
   color: #dc7000;
+  
+  &:hover {
+    color: #1a1a1a;
+    background-color: #f8f9fa;
+  }
 }
 
 .nav-item {
@@ -65,6 +80,7 @@
     background-color: #fff;
   }
 }
+
 
 @include mobile-first(768px) {
   .logo-img {

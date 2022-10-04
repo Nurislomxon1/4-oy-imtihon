@@ -66,7 +66,7 @@
   &::after {
     margin-left: 10px;
     @include psevdoelements(inline-block, 11px, 13px, "");
-    background-image: url('../../images/arrow-bg.svg');
+    background-image: url("../images/arrow-bg.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../../images/hero-bg-mobile.jpg');
+  background-image: url("../images/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: contain;
@@ -35,7 +35,7 @@
 
 .btn-detail {
   padding: 13px 18px 12px 22px;
-  background: linear-gradient(92.48deg, #FA8305 2.08%, #FB9E3C 117.25%);
+  background: linear-gradient(92.48deg, #fa8405 2.08%, #fb9e3c #fb9e3c);
   border-radius: 40px;
 }
 
@@ -57,7 +57,7 @@
 
 @include mobile-first(768px) {
   .hero  {
-    background-image: url('../../images/main-hero-bg.png'), url('../../images/hero-bg-mobile.jpg'), ;
+    background-image: url("../images/main-hero-bg.png"), url("../images/hero-bg-mobile.jpg"), ;
     background-repeat: no-repeat;
     background-position: top right -200px, bottom center;
     background-size: cover, contain;

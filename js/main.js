@@ -1,3 +1,11 @@
+var elBurgerBtn = document.querySelector(".header__burger");
+
+elBurgerBtn.addEventListener("click" , function(){
+    document.body.classList.toggle("header__open")
+});
+
+
+
 $(document).ready(function(){
   $('.servises__list').slick({
     infinite: true,
